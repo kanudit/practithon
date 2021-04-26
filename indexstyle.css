@@ -1,1 +1,183 @@
 /* This is a stylesheet for hackathon 1 homepage */
+
+#wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: seashell;
+    overflow-x: hidden;
+}
+
+* {
+
+    margin: 0;
+}
+
+.gallery-wrapper {
+    /* padding-top: -50px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #A383BE;
+    background-image: linear-gradient(to bottom left, red, #A383BE, purple);
+    background-size: cover;
+}
+
+header {
+    background-color: crimson;
+    border-bottom: 2px solid black;
+    height: 7vh;
+
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(80, 75, 200);
+    height: 50vh;
+    background-image: linear-gradient(to bottom right, purple, #A383BE, red);
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hello-bar {
+    display: flex;
+    background-color: rgb(80, 75, 200);
+    height: 50vh;
+    background-image: linear-gradient(to bottom right, purple, #A383BE, red);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallery-wrapper {
+    /* padding-top: -50px; */
+    height: 25%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #A383BE;
+    background-image: linear-gradient(to bottom left, red, #A383BE, purple);
+    background-size: cover;
+}
+
+.gallery {
+
+    display: grid;
+    height: ;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-self: center;
+    padding: 5px 0;
+
+}
+
+.photos {
+    /* background-color: green; */
+
+    padding: 5px;
+
+
+}
+
+.gallery img {
+    border-radius: 25%;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    /* padding: 5px 5px; */
+    box-shadow: 15px 8px 25px rgba(0, 0, 0, 0.781),
+        -15px -8px 25px black;
+
+
+}
+
+footer {
+    /* display: block; */
+    width: 100%;
+    /* position: fixed; */
+    background-color: crimson;
+    border-bottom: 2px solid black;
+    height: 50px;
+
+}
+
+#showcase {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    /* height: 100vh; */
+    border-radius: 50%;
+    /* background-image: url("https://i.pinimg.com/originals/a7/45/23/a7452366747f11601d510d3eee1eab1c.gif"); */
+    /* background-image: radial-gradient(black, gray, white, gray, black); */
+    /* background-size: 150vh 150vw; */
+    /* animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+
+}
+
+#circle {
+    border: 5px solid whitesmoke;
+    /* background-image: radial-gradient(black, gray, white, gray, black); */
+    background-position: left;
+    background-size: cover;
+    box-shadow: 20px 20px yellow;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    margin: 25px;
+    animation-name: slide, fade;
+    animation-duration: 18s, 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translate(-100%, 0px);
+    }
+
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: 1;
+
+    }
+
+    75% {
+        opacity: .25;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
+}
